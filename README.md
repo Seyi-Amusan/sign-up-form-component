@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [](https://www.frontendmentor.io/solutions/intro-signup-form-orWQtV85W-)
+- Solution URL: [My Solution](https://www.frontendmentor.io/solutions/intro-signup-form-orWQtV85W-)
 
 ## My process
 
