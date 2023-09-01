@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+
+    @media (max-width: 385px) {
+        font-size: 55%;
+    }
+
+    @media (max-width: 345px) {
+        font-size: 50%;
+    }
+}
+
+:root{
+    --red: hsl(0, 100%, 74%);
+    --white: hsl(0, 0%, 100%);
+    --dark-blue: hsl(249, 10%, 26%);
+    --blue: hsl(248, 32%, 49%);
+    --greyish-blue: hsl(246, 25%, 77%);
+    --green: hsl(154, 59%, 51%);
+}
+
+@import 'scss/button';
+@import 'scss/typography';
+@import 'scss/layout';

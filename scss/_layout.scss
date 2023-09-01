@@ -1,0 +1,115 @@
+body{
+    min-height: 100vh;
+    background-image: url(images/bg-intro-desktop.png);
+    background-color: var(--red);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 520px) {
+        background-image: url(images/bg-intro-mobile.png);
+    }
+}
+
+.main{
+    margin: 0 auto;
+    width: 99rem;
+
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    align-items: center;
+    column-gap: 3.5rem;
+
+    height: 70%;
+
+    @media (max-width: 1000px) {
+        width: 90rem;
+    }
+
+    @media (max-width: 918px) {
+        width: 80rem;
+    }
+
+    @media (max-width: 918px) {
+        width: 75rem;
+    }
+
+    @media (max-width: 780px) {
+        grid-auto-flow: row;
+        grid-template-columns: auto;
+        justify-items: center;
+        row-gap: 6rem;
+    }
+
+    &__header{
+        display: grid;
+        row-gap: 2.5rem;
+
+        @media (max-width: 780px) {
+            text-align: center;
+            margin: 15rem 8% 0;
+        }
+    }
+
+    &__form{
+        display: grid;
+        row-gap: 2rem;
+
+        @media (max-width: 780px) {
+            margin: 0 0 8rem 0;
+        }
+
+        & > *{
+            width: 37rem;
+            border-radius: 5px;
+            box-shadow: 0 5px 5px rgba($color: #000000, $alpha: .2);
+        }
+
+        &--header{
+            background-color: var(--blue);
+            height: 5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &--input-box{
+            background-color: var(--white);
+            padding: 3rem 0;
+
+            form{
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                & > *{
+                    height: 4rem;
+                    width: 80%;
+                    margin-bottom: 2rem;
+
+                    &::placeholder{
+                        margin-left: 1.5rem;
+                    }
+                }
+            }
+        }
+
+        &--input-error-msg{
+            text-align: end;
+            display: none;
+            height: max-content !important;
+            margin: 0 0 1.2rem !important;
+        }
+
+        &--footer{
+            text-align: center;
+            margin: 0 3rem;
+        }
+    }
+}
+
+.active{
+    display: block;
+}

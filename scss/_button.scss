@@ -1,0 +1,12 @@
+.main__form--btn{
+    background-color: var(--green);
+    border: 0;
+    box-shadow: 0 5px 5px rgba($color: #000000, $alpha: .2);
+    transition: all .2s;
+    font-family: 'Poppins', sans-serif;
+    
+    &:hover{
+        cursor: pointer;
+        transform: translateY(-2px);
+    }
+}

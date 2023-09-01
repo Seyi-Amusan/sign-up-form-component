@@ -1,0 +1,57 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.main{
+    color: var(--white);
+
+    &__header{
+        
+        &--heading{
+            font-size: 4rem;
+            font-weight: 600;
+            line-height: 1;
+        }
+
+        &--paragraph{
+            font-size: 1.5rem;
+            line-height: 1.2;
+        }
+    }
+
+    &__form{
+
+        &--header{
+            span{
+                color: var(--greyish-blue);
+                margin-left: 1%;
+            }
+        }
+
+        &--input-box form input::placeholder{
+            font-family: 'Poppins', sans-serif;
+        }
+
+        &--input-error-msg{
+            color: var(--red);
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+
+        &--btn{
+            font-weight: 600;
+            color: var(--white);
+        }
+
+        &--footer{
+            color: var(--greyish-blue);
+            font-size: 1.1rem;
+
+            a{
+                text-decoration: none;
+                color: var(--red);
+                font-weight: 600;
+            }
+        }
+    }
+}
